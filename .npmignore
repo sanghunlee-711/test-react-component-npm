@@ -1,0 +1,11 @@
+# 배포시 불필요한 파일 들
+# npm
+node_modules/
+
+# dev
+src
+.gitignore
+tsconfig.json
+
+# GIT
+.git
