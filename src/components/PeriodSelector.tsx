@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import Calendar from './Calendar';
 
-interface IPeriodSelectorProps {
+export interface IPeriodSelectorProps {
   handleStartDate: (date: Date) => void;
   handleEndDate: (date: Date) => void;
   withTimes: boolean;
