@@ -90,4 +90,4 @@ const Calendar: React.FC<ICalendarProps> = ({
   );
 };
 
-export default Calendar;
+export default React.memo(Calendar);

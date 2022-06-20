@@ -54,4 +54,4 @@ const CalendarContainer: ForwardRefRenderFunction<
   );
 };
 
-export default forwardRef(CalendarContainer);
+export default React.memo(forwardRef(CalendarContainer));
