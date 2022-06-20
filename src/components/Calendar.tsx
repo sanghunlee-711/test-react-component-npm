@@ -5,12 +5,12 @@ import ko from 'date-fns/locale/ko';
 import React, { forwardRef, useRef } from 'react';
 import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import 'styles/calendar.css';
+import '../styles/calendar.css';
 import CalendarContainer from './CalendarContainer';
 
 registerLocale('ko', ko);
 
-interface ICalendarProps {
+export interface ICalendarProps {
   width?: string;
   date: Date;
   handleDate: (value: Date) => void;

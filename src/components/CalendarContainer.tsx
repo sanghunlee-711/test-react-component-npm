@@ -23,12 +23,12 @@ const InputContainer = styled.div`
   padding: 0px 16px;
   width: 207px;
   height: 45px;
-  background: ${({ theme }) => theme.colors.white};
+  background: #ffff;
   box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 
   & > input {
-    color: ${({ theme }) => theme.colors.gray};
+    color: gray;
     width: 90px;
     width: calc(100% - 16px * 2 - 23px);
     font-size: 16px;
