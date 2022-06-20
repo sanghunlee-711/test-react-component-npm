@@ -39,7 +39,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var jsx_runtime_1 = require("react/jsx-runtime");
-var react_1 = require("react");
+var react_1 = __importStar(require("react"));
 var styled_components_1 = __importStar(require("styled-components"));
 var flexAlignCenter = (0, styled_components_1.css)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n"], ["\n  display: flex;\n  align-items: center;\n"])));
 var flexSpaceBetween = (0, styled_components_1.css)(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  ", "\n  justify-content: space-between;\n"], ["\n  ", "\n  justify-content: space-between;\n"])), flexAlignCenter);
@@ -54,6 +54,6 @@ var CalendarContainer = function (_a, ref) {
     var className = _a.className, value = _a.value, onClick = _a.onClick, onChange = _a.onChange;
     return ((0, jsx_runtime_1.jsxs)(InputContainer, __assign({ onClick: onClick }, { children: [(0, jsx_runtime_1.jsx)("input", { className: className, type: "text", value: value, ref: ref, onChange: function (e) { return onChange(e.target.value); } }), (0, jsx_runtime_1.jsx)("img", { src: "/static/icons/icon-calendar.png", alt: "calendar-icon" })] })));
 };
-exports.default = (0, react_1.forwardRef)(CalendarContainer);
+exports.default = react_1.default.memo((0, react_1.forwardRef)(CalendarContainer));
 var templateObject_1, templateObject_2, templateObject_3;
 //# sourceMappingURL=CalendarContainer.js.map

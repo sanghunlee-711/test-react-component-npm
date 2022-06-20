@@ -6,5 +6,5 @@ interface ICalendarProps {
     date: Date;
     handleDate: (value: Date) => void;
 }
-declare const Calendar: React.FC<ICalendarProps>;
-export default Calendar;
+declare const _default: React.NamedExoticComponent<ICalendarProps>;
+export default _default;

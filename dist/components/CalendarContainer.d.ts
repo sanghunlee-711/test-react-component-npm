@@ -5,5 +5,5 @@ interface InputProps {
     onChange: (value: string) => void;
     onClick: () => void;
 }
-declare const _default: React.ForwardRefExoticComponent<InputProps & React.RefAttributes<HTMLInputElement>>;
+declare const _default: React.MemoExoticComponent<React.ForwardRefExoticComponent<InputProps & React.RefAttributes<HTMLInputElement>>>;
 export default _default;

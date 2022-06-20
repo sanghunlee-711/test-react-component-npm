@@ -40,7 +40,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var jsx_runtime_1 = require("react/jsx-runtime");
 var date_fns_1 = require("date-fns");
 var ko_1 = __importDefault(require("date-fns/locale/ko"));
-var react_1 = require("react");
+var react_1 = __importStar(require("react"));
 var react_datepicker_1 = __importStar(require("react-datepicker"));
 require("react-datepicker/dist/react-datepicker.css");
 require("styles/calendar.css");
@@ -73,5 +73,5 @@ var Calendar = function (_a) {
                     : '';
         } }));
 };
-exports.default = Calendar;
+exports.default = react_1.default.memo(Calendar);
 //# sourceMappingURL=Calendar.js.map
