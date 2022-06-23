@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { TColor } from '../types/common';
 
-interface IListBoxButtonProps {
+export interface IListBoxButtonProps {
   text: string;
   onClick: () => void;
   width: '44' | '57';
