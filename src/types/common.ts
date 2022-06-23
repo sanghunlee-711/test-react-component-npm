@@ -1,7 +1,14 @@
+import { DefaultTheme } from 'styled-components';
+
 export interface ITableListType<T> {
   data?: T[];
   total?: number;
 }
+export type TColor = keyof DefaultTheme['colors'];
+export type TImageFile = File | null | string;
+export type TFonts = keyof DefaultTheme['fonts'];
+// apps
+export type TTextShadow = keyof DefaultTheme['textShadow'];
 
 export type TSearchable = {
   property: string;
